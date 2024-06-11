@@ -10,9 +10,12 @@ export const Auth = () => {
   return (
     <div>
       <SignedOut>
-        <SignUpButton />
-        <SignInButton />
+        <SignUpButton mode="modal" />
+        <SignInButton mode="modal" />
       </SignedOut>
+      <SignedIn>
+        <UserButton />
+      </SignedIn>
     </div>
   );
 };
